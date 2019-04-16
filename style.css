@@ -3,13 +3,11 @@ body {
 }
 
 #navScreen {
-    height: 570px;
     width: 100%;
     background-color: lightgrey;
 }
 
 #tagBox {
-    height: 300px;
     width: 100%;
     background-color: grey;
 }
@@ -19,13 +17,52 @@ p {
 }
 
 .project {
-    height: 300px;
     width: 100%;
     background-color: lightgrey;
 }
 
 .about {
-    height: 300px;
     width: 100%;
     background-color: grey;
 }
+
+
+@media screen and (max-width: 380px) {
+
+#navScreen {
+    height: 570px;
+}
+
+#tagBox {
+    height: 300px;
+}
+
+.project {
+    height: 300px;
+}
+
+.about {
+    height: 300px;
+}
+
+}
+
+@media screen and (min-width: 381px) {
+
+    #navScreen {
+        height: 570px;
+    }
+    
+    #tagBox {
+        height: 300px;
+    }
+    
+    .project {
+        height: 300px;
+    }
+    
+    .about {
+        height: 300px;
+    }
+    
+    }
