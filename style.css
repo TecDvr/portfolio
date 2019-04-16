@@ -1,0 +1,31 @@
+body {
+    margin: 0px;
+}
+
+#navScreen {
+    height: 570px;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+#tagBox {
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+}
+
+p {
+    margin: 0px;
+}
+
+.project {
+    height: 300px;
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.about {
+    height: 300px;
+    width: 100%;
+    background-color: grey;
+}
