@@ -21,32 +21,35 @@ nav {
     width: 20px;
 }
 
-#navScreen {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    width: 90%;
+.menuDrop {
+    height: 580px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0px;
 }
 
-.hero {
-    text-align: left;
-    font-size: 100px;
-    font-family:  'Orbitron', sans-seri;
-    color: #FBAE17;
+.menuDropBG {
+    height: 580px;
+    width: 100%;
+    background-color: white;
 }
 
 .tagBox {
     width: 95%;
-    background-color:lightgrey;
-    color: white;
+    background-color:white;
+    color: lightgrey;
     text-align: left;
     letter-spacing: 1px;
     line-height: 120%;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2%;
     display: table;
     font-family: 'Orbitron', sans-serif;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 .introTag {
@@ -57,24 +60,26 @@ nav {
    vertical-align: middle;
 }
 
-.tent {
-    height: 100px;
-    float: left;
-    clear: both;
-    margin-right: 5%;
-}
-
 .project {
     width: 100%;
+}
+
+#projects {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
 }
 
 .compScreen {
     width: 90%;
 }
 
+.tabletScreen {
+    width: 90%;
+    margin-top: 15%;
+}
+
 h2 {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 10%;
     margin-left: 5%;
     text-align: left;
     font-size: 80px;
@@ -102,12 +107,20 @@ h3 {
 
 .techLogo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.break {
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .tech {
-    width: 20%;
+    height: 90px;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: auto;
@@ -120,11 +133,48 @@ h3 {
     padding-top: 10%;
 }
 
-footer {
-    width: 100%;
+.whatIDo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 10%;
 }
 
-/*phone*/
+.whatIDoList {
+    list-style: none;
+    text-align: left;
+    padding: 0px;
+    color: #FBAE17;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-seri;
+    margin-left: 5%;
+    margin-top: 0px;
+}
+
+.contact {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+}
+
+.contactLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.contactLogoImg {
+    height: 40px;
+}
+
+footer {
+    width: 100%;
+    font-size: 30px;
+    color: grey;
+    font-family: 'Sacramento', cursive;
+}
+
+/*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*/
 @media screen and (max-width: 450px) {
 
     #navScreen {
@@ -139,6 +189,10 @@ footer {
         display: none;
     }
 
+    .aboutMeNum {
+        display: block;
+    }
+
 
 
 }
@@ -152,7 +206,7 @@ footer {
 
 
 
-/*tablet*/
+/*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*/
 @media screen and (min-width: 451px) {
 
     
