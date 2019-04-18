@@ -28,16 +28,25 @@ nav {
     width: 90%;
 }
 
+.hero {
+    text-align: left;
+    font-size: 100px;
+    font-family:  'Orbitron', sans-seri;
+    color: #FBAE17;
+}
+
 .tagBox {
-    width: 100%;
+    width: 95%;
     background-color:lightgrey;
     color: white;
     text-align: left;
     letter-spacing: 1px;
     line-height: 120%;
-    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
     display: table;
     font-family: 'Orbitron', sans-serif;
+    border-radius: 10px;
 }
 
 .introTag {
@@ -120,7 +129,7 @@ footer {
 
     #navScreen {
         height: 570px;
-        background-image: url(https://lh3.googleusercontent.com/dp5Zy-ZhMy9C5oIOkoRAQHx8G6cQ8veLhpTbuX_G-Mm0OWn_7Ip5wuDMBpKO8_1qLlT-3Ui6THtRe19BVO1v2LtirtPpFLdDfZzPS7xTfPBfm7i41NmtbQqBusyeyarCVfqeV7F-PJB-89UU0444_YvLVdRQGwKZEQa8Tz8tjazetmBDwCMeoKGZ9frNipo12L7ENwzw9u0So2sqkECKeRvb0HBX1Pa8hq6FdXZOqKkONarg8lvwF40Jx96Cu7IrqZCkqHhRXhs9HiXfnFQ46vUzk7neTb-mFRPxjqqSy8ow4GonVRiT0H5MvZpU9TW2EANXP9vDsrwwY98z8i0LpFVCtqGKdCsHV9NPoPDcMze86sEzh66HleidPQI9e7ZJYmld_1XUHVptMry5c98gNxy-sknVqKuRj9AyNdIUzpVpab5O0bflf5F9_f4WcGwyt1s6yqvvT215IpdKgmARnZ3IW8DROXzmnx8K-vrvAY0mQ-Ms0lhS_ux_dfO6Ylx9V24rAeLsshCUKDzw3xV3qpmQTIcmc2fGVL9T4VQvqkITDFQaoXM6J-SsMd9hNjzuPK5StPuR5bDuuhfEm0TBPe5Ppy7smXNWTlLj1bxVvmDGXfT-mZa9u6GLjka-wOEQvbO_mrw8myBdNLtNVoW884TURINDT6ASJ3V6ik1qhfbWNJBehtycNwUBWOR_40Nof2mFI3McpeengadZ_GpSO73D=w876-h1396-no);
+        background-image: url();
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
