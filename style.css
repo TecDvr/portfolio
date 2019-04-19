@@ -10,7 +10,14 @@ body {
 nav {
     height: 40px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+}
+
+.topNav {
+    text-decoration: none;
+    color: lightgrey;
 }
 
 .menu {
@@ -103,6 +110,7 @@ h3 {
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 30px;
+    border: 1px solid white;
 }
 
 
@@ -182,6 +190,7 @@ h3 {
 .whatIDo {
    margin-bottom: 40px;
 }
+
 .whatIDoList {
     list-style: none;
     text-align: center;
@@ -201,7 +210,7 @@ li {
 }
 
 .contact {
-    background-color: rgb(241, 241, 241);
+    background-color: white;
     border-radius: 10px;
 }
 
@@ -237,6 +246,11 @@ footer {
         background-size: contain;
         background-repeat: no-repeat;
     }
+
+    nav {
+        position: absolute;
+        right: -1px;
+    }
     
     .navLink {
         display: none;
@@ -252,6 +266,11 @@ footer {
         width: 50%;
     }
 
+    nav {
+        position: absolute;
+        right: -1px;
+    }
+
     .navLink {
         display: none;
     }
@@ -259,11 +278,17 @@ footer {
 
 
 @media screen and (min-width: 800px) {
+    nav {
+        position: fixed;
+        right: 0px;
+        padding-left: 0px;
+    }
+
     .navLink {
         display: inline-block;
-        margin-right: 10px;
         font-family: 'Orbitron', sans-seri;
         color: grey;
+        padding-left: 0px;
     }
 
     .menu {
