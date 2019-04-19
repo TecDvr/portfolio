@@ -28,19 +28,12 @@ nav {
     width: 20px;
 }
 
-.menuDrop {
-    height: 580px;
-    width: 100%;
-    background-color: white;
-    color: white;
-    font-family: 'Orbitron', sans-serif;
-    margin: 0px;
-}
-
-.menuDropBG {
-    height: 500px;
-    width: 100%;
-    background-color: white;
+.menuTwo {
+    margin-right: 10px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 20px;
 }
 
 .tagBox {
@@ -109,8 +102,8 @@ h3 {
     height: 50px;
     padding-left: 40px;
     padding-right: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
-    border: 1px solid white;
 }
 
 
@@ -210,8 +203,8 @@ li {
 }
 
 .contact {
+    height: 400px;
     background-color: white;
-    border-radius: 10px;
 }
 
 .contactLogo {
@@ -231,21 +224,13 @@ li {
 
 footer {
     width: 100%;
-    font-size: 30px;
-    color: grey;
+    font-size: 20px;
+    color: lightgrey;
     font-family: 'Sacramento', cursive;
 }
 
 
 @media screen and (max-width: 450px) {
-
-    #navScreen {
-        height: 570px;
-        background-image: url();
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
 
     nav {
         position: absolute;
@@ -258,6 +243,17 @@ footer {
 
     .aboutMeNum {
         display: block;
+    }
+
+    .menuDrop {
+        font-family: 'Orbitron', sans-seri;
+        text-align: right;
+    }
+
+    .menuList {
+        padding-right: 10px;
+        font-size: 15px;
+        color: grey;
     }
 }
 
@@ -273,6 +269,17 @@ footer {
 
     .navLink {
         display: none;
+    }
+
+    .menuDrop {
+        font-family: 'Orbitron', sans-seri;
+        text-align: right;
+    }
+
+    .menuList {
+        padding-right: 10px;
+        color: grey;
+        font-size: 15px;
     }
 }
 
