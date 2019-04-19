@@ -31,33 +31,35 @@ nav {
 }
 
 .menuDropBG {
-    height: 580px;
+    height: 500px;
     width: 100%;
     background-color: white;
 }
 
 .tagBox {
-    width: 95%;
+    height: 500px;
+    width: 100%;
     background-color:white;
     color: lightgrey;
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
-    line-height: 120%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 2%;
     display: table;
     font-family: 'Orbitron', sans-serif;
-    border-radius: 10px;
     font-weight: bold;
 }
 
 .introTag {
-   font-size: 100%; 
-   padding: 10%;
+   font-size: 100%;
    display: table-cell;
-   text-align: left;
+   text-align: center;
    vertical-align: middle;
+   padding-bottom: 15px;
+}
+
+.heroNum {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
 }
 
 .project {
@@ -73,18 +75,19 @@ nav {
     width: 90%;
 }
 
-.tabletScreen {
-    width: 90%;
-    margin-top: 15%;
-}
-
 h2 {
-    padding-top: 10%;
-    margin-left: 5%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
     text-align: left;
     font-size: 80px;
     font-family:  'Orbitron', sans-serif;
     color: #FBAE17;
+}
+
+.sectionNum {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 30px;
 }
 
 h3 {
@@ -93,6 +96,35 @@ h3 {
     color: grey;
     margin-left: 5%;
     font-size: 130%;
+}
+
+.liveLinks {
+    height: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.liveLinks:hover {
+    animation: bounce 1s;
 }
 
 .projectText {
@@ -112,11 +144,25 @@ h3 {
     padding-bottom: 30px;
 }
 
-.break {
-    background-color: white;
-    height: 40px;
+.aboutBox {
     width: 100%;
-    border-radius: 10px;
+    background-color:white;
+    color: lightgrey;
+    text-align: center;
+    letter-spacing: 1px;
+    display: table;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.aboutMeNum {
+    text-align: left;
+    margin-top:0px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    line-height: 120%;
 }
 
 .tech {
@@ -134,21 +180,24 @@ h3 {
 }
 
 .whatIDo {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    padding-left: 10%;
+   margin-bottom: 40px;
 }
-
 .whatIDoList {
     list-style: none;
-    text-align: left;
+    text-align: center;
     padding: 0px;
     color: #FBAE17;
     font-size: 16px;
     font-family: 'Orbitron', sans-seri;
     margin-left: 5%;
+    margin-right: 5%;
     margin-top: 0px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .contact {
@@ -167,6 +216,10 @@ h3 {
     height: 40px;
 }
 
+.contactLogoImg:hover {
+	transform: skew(-10deg);
+}
+
 footer {
     width: 100%;
     font-size: 30px;
@@ -174,7 +227,7 @@ footer {
     font-family: 'Sacramento', cursive;
 }
 
-/*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*//*phone*/
+
 @media screen and (max-width: 450px) {
 
     #navScreen {
@@ -192,35 +245,32 @@ footer {
     .aboutMeNum {
         display: block;
     }
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-/*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*//*tablet*/
 @media screen and (min-width: 451px) {
-
-    
-    
+    .compScreen {
+        width: 50%;
     }
 
-@media screen and (min-width: 700px) {
-
-    
-    
+    .navLink {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 800px) {
 
-    
-        
+@media screen and (min-width: 800px) {
+    .navLink {
+        display: inline-block;
+        margin-right: 10px;
+        font-family: 'Orbitron', sans-seri;
+        color: grey;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .compScreen {
+        width: 50%;
+    }
 }

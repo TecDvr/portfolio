@@ -1,24 +1,29 @@
 function menuClick() {
     $('.menu').on('click', function(event) {
         $('nav').html(`
-            <div class="menuDrop">
+        <img class="menu" src="https://lh3.googleusercontent.com/fQ7285Qi0WfApU435ojom5nLvGhoAOHGEj1wLhohrGf_l3nFiEHBqyW8xOtsqBBmyghSODEFLYEpfIBU13o99BKtfszwKR3LelofVOKer6jvDFdFEULeQW_lmHDviaZZvJlITNm_myhS0yc--9xJ_sKDTipc1V4MqfrhSoTp3OKagiSc946nPcTOXu0ioII3SeUpiHEYtIsoNQEinToiNJdlWsmoM3nz3_zaXG5jhe2etrldcl4rMvovNN66oxmtJ3nnpkg3uo1KqNyR9mEqSEVbAb91UeyZ7j_Iqo0yZtGrc3cMJ1aDHHV_npOCO1iR4FPHgeeI0un_kF8b7HyTHkkMW1MOvAbwvQvkf_XtuPBaooz2Z2n3hWqWsE04YUaVNELCZ793CI1BAS47WBe98zMveK3hV6a-ftXx_0KTx07OTfdnKDCJg2QH2TY8EjZxu5w1y6hsX8vGK_MyWU75AC7lg9LkmYWeNpRLOkSMdClYYllTlrnpnAcCsGNDDBnKuqPBF-J-JBYgqWv2FtEizV0JX7SG4z5Dy_RPKnDpzWXHg0dAmn27Voh6mGdfOR3Y_DkxGFEZuQQJzvpEPYrNFsy0aLdqe8Ser5uBkEwsmnNp8cE9tbCVSX2_zjCc4JHScYMo0G3Xi7IvNgnDHLHcdm3mrEXsfhQ=s101-no" alt="menu">    
+        <div class="menuDrop">
                 <p>HOME</p>
                 <p>PROJECTS</p>
                 <p>ABOUT ME</p>
                 <p>GET IN TOUCH</p>
             </div>
         `).hide().fadeIn(500);
-        $('.tagBox').html(`<div class="menuDrop">
-    </div>`);
+        
     });
 };
 
 function menuReturn() {
-    $('nav').on('click', '.menuDrop', function(event) {
-        $('.tagBox').html(`
-            <p class="introTag"><img class="tent" src="https://lh3.googleusercontent.com/H4ZZKZ8DGz-ZcTD8MN3D8X6PnCDs38bkj_G86MlfuI2mAbGpoD-jCLJ_ywj2faQJjfpMJkMjZkxIQQzaoNFiS7xbZB2PKusoi3dSL9dz62Bzyf78hqQMoT6Giy0Uj-7qrgnzqToMEt28B1OXfPy7O4pVIl-Pw9vqEZtfApBaJQ_XBaHL4s1lUGLqSrSSCagumNMu6wh-p1AS-zxEF5bDTrMXOr3ZWuwXZ0-82gVUrsLzEc61vtQGqpbh7z0WJQtakU9emUadiU8G8TgpYifo-9r2SG2r695-1wgz52qh4734hcZZ_7MCzbczsZWhWkacg8DJanfp5XLljj4XNHF5abXu3UHwUeXmC3kgcbNnM6-DbmyVlifQrYR7lU3zw6EQe5O6fDt7C4NDlCasKB2oZ1zMQEYAciUA7I_mp1JDxQ6HvLWutxtYjtGBMac6P3Nu32kHPKiLhGTPaHIbS9HlcpyAB_x0AjuBYMdAESNcDZpFa-JpDxBq6by_UahXMWLfQUskVZyubzanSrJww7OA85-3DpHh5lv6GoXk2jidekKvHcB83VNZEJrAAJBEy9-Pz334PHAEsVyZY989xWbottEwlmbaLpvvOGHfgbXZxIhBo2ElPIESsb_2kmck7gsd0CXm_7ZH6IrKj_YbrPxWVhJHPFLwpKK7WXTmVJNYN38RGTti31FBoG-UsUEYToo1dewRWDy90Ii7lJq9HaoYP5wf=s512-no" alt="tent">Hi, my name is Zach Gwirtz. I design websites & forward thinking applications. My inspiration lies with in the Pacific Northwest<br>
-            <br>Life is full of problems, I am here to help you solve them</p>`).hide().fadeIn(500);
+    $('nav').on('click', '.menu', function(event) {
+        $('nav').html(`<nav>
+        <img class="menu" src="https://lh3.googleusercontent.com/C3lQTS7eC2akYPbM4PaOiE24SMAKCa1mVtyF_vp66sEAV8sI-8zKdHwp3rJhY7A47w67ykRUo2706mCYhWjRPdoor-X8SqxwfNu-vwUr8sNMWw6EuVGep_S4zg29wZCxEUCFZyheStUG4AZETgOvCEo889B5UwtKULZMG3O_NupjeeJ5gqxsR6oEnenRnHlaCZKhZrSUln8DKc5ZszofaiilQ5SHPxyj7NZ5mUp8IkfYnwT-w9HBmV-LR_72CT_3_20ZEtJaahcg1uGy8G4KF2Wn4GfM1xnxKUmp19MAPkQivaUzcB-23N0aK3pUUEGB85kidmpY8425rFOE_YmgANjw-KL9ycDYqsTUJwXx0lpbcIMPyDrQaCnxm56PaqtQc-VzKe8lyPw_TIFAhhSiNcoqLqAxwSss28jp9KzuLo86dlexOOlON5YJcGZsLwWT0p4ByYCwZPzMzfsu8qnS5vQ_te0KESzOh2-pHAfFHKKCP03Fphj_CtXPiIwSJgmhBCNCk2UThosQWgk1fdjuKI5Q6dZEkLtt_QD52MP6OcyJTo70NgSBvGLo9toOvetZ6SMTJy-BiZV8-V37o51Mwg5xnFkVuquVe1ODwBVIy8VN3_2sn7k5ZOjCfMnecL5RdvnuyrDcg5Hb3r3qCyxIRkc8rp5VkT4=s101-no" alt="menu">
+    </nav>
+<div class="tagBox">
+    <h2>01</h2>
+    <p class="introTag">Zachary Gwirtz<br>Web Development<br>Inspired by the PNW</p>
+</div>`).hide().fadeIn(500);
     });
+
 }; 
 
 function runPortfolio() {
