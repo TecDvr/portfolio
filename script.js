@@ -27,7 +27,7 @@ function menuReturn() {
 }; 
 
 function slowScroll() {
-    $('a[href*="#"]').on('click', function(e) {
+    $('main').on('click', 'a[href*="#"]', function(e) {
         e.preventDefault()
         $('html, body').animate(
           {
